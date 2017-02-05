@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MAPL",
+	"patterns": [
+		{
+			"include": "#characters"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#labels"
+		},
+		{
+			"include": "#debug"
+		}
+	],
+	"repository": {
+		"characters": {
+			"patterns": [{
+				"name": "string.quoted.single.mapl",
+				"match": "('.?')|('\\\\.')"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.mapl",
+				"match": "'.*\\n"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric.mapl",
+				"match": "(\\d)+(\\.(\\d)+)?"
+			}]
+		},
+		"labels": {
+			"patterns": [{
+				"name": "entity.name.type.class.mapl",
+				"match": "(JZ (\\w)+)|(JMP (\\w)+)|(\\w)+:"
+			}]
+		},
+		"debug": {
+			"patterns": [{
+				"name": "entity.name.function.mapl",
+				"match": "#.*\\n"
+			}]
+		}
+	},
+	"scopeName": "source.mapl"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "mapl",
+    "displayName": "MAPL",
+    "description": "Provides support for MAPL language files within Visual Studio Code",
+    "version": "1.2.0",
+    "publisher": "carlubian",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mapl",
+            "aliases": ["MAPL", "mapl"],
+            "extensions": [".mapl",".pl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mapl",
+            "scopeName": "source.mapl",
+            "path": "./syntaxes/mapl.tmLanguage.json"
+        }]
+    }
+}
