@@ -1,9 +1,19 @@
 {
     "name": "mapl",
-    "displayName": "MAPL",
+    "displayName": "VSCode-MAPL",
     "description": "Provides support for MAPL language files within Visual Studio Code",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "publisher": "carlubian",
+    "icon": "images/icon-MAPL.png",
+    "homepage": "https://github.com/carlubian/VSCode-MAPL",
+    "galleryBanner": {
+        "color": "#007ACC",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/carlubian/VSCode-MAPL.git"
+    },
     "engines": {
         "vscode": "^1.5.0"
     },
